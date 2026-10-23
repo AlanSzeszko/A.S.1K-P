@@ -1,16 +1,137 @@
-<!DOCTYPE html> 
-<html lang="pl-PL"> 
-<html> 
-     <head> 
-             <meta charset="utf-8"> 
-             <title> poczta Szeszko </title> 
-     </head> 
-    <body> 
- 
-Jestem na stronie formularzu <br>
 
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <title>ZADANIE FORMULARZ</title>
 
-<A HREF="index.html"> wróć </A> 
+    <style>
+        body {
+            background-color: #87CEFA;
+        }
 
-    </body> 
-  </html>
+        table {
+            width: 100%;
+        }
+
+        td {
+            width: 50%;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+
+<center><h1>Ankieta o grach komputerowych</h1></center>
+
+<form enctype="text/plain"
+      action="mailto:mkryniew@wp.pl"
+      subject="formularz_dane"
+      method="Post">
+
+<table>
+
+<tr>
+    <td width="500">
+        Która gra według ciebie jest <br>
+        lepsza i dlaczego? Uzasadnij swoją odpowiedź.
+        <br><br>
+
+        <input type="checkbox" name="ciastko" value="k"> CS2
+        <br>
+        <input type="checkbox" name="ciastko" value="m"> Valorant
+        <br><br>
+
+        <textarea cols="50" rows="4"></textarea>
+        <br><br><br><br>
+
+        <nobr>Jak oceniasz nową aktualizację<br>
+        z kurczakami w CS2.<br>
+        Odpowiedz w kilku zdaniach.<br>
+        Jeżeli nie grasz, to o tym napisz.:</nobr>
+        <br>
+
+        <textarea cols="50" rows="4"></textarea>
+
+        <br><br><br><br>
+
+        <nobr>Czy Minecraft był grą twojego dzieciństwa?</nobr>
+        <br><br>
+
+        <input type="checkbox" name="pyt3" value="tak"> Tak
+        <br><br>
+
+        <input type="checkbox" name="pyt3" value="nie"> Nie
+        <br><br>
+
+        <nobr>W jakiej grze masz najwięcej godzin? <br>
+        Podaj nazwę tej gry:</nobr>
+        <br><br>
+
+        <input name="inna" size="25" maxlength="200">
+        <br><br>
+
+        <nobr>Podpis:</nobr>
+        <br><br>
+
+        <input name="podpis" size="25" maxlength="200">
+    </td>
+
+    <td width="500">
+        Na czym grasz w gry komputerowe?
+        <br><br>
+
+        <input type="checkbox" name="platforma" value="PS"> PS
+        <br>
+
+        <input type="checkbox" name="platforma" value="X-BOX"> X-BOX
+        <br>
+
+        <input type="checkbox" name="platforma" value="PC"> PC
+        <br><br><br>
+
+        <nobr>Ile czasu dziennie spędzasz na grach<br>
+        komputerowych</nobr>
+        <br><br>
+
+        <input name="czas" size="25" maxlength="100">
+        <br><br><br>
+
+        <nobr>Jakie są twoje ulubione rodzaje <br>
+        gier? (np. RPG)</nobr>
+        <br><br>
+
+        <input name="rodzaje" size="25" maxlength="100">
+        <br><br><br>
+
+        <nobr>Czy czekasz na premierę GTA?</nobr>
+        <br><br>
+
+        <input type="checkbox" name="gta" value="tak"> Tak
+        <br>
+
+        <nobr>Dlaczego:</nobr>
+        <textarea cols="50" rows="4"></textarea>
+        <br>
+
+        <input type="checkbox" name="gta" value="nie"> Nie
+        <br>
+
+        <nobr>Dlaczego:</nobr>
+        <textarea cols="50" rows="4"></textarea>
+        <br><br><br>
+
+        <nobr>Data wykonania:</nobr>
+        <br><br>
+
+        <input name="data" size="25" maxlength="200">
+    </td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
